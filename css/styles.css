@@ -48,6 +48,11 @@ img {
   display: block;
 }
 
+svg {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -57,6 +62,8 @@ img {
 .header {
   border-bottom: 1px solid #e7e9fc;
   margin: 0 auto;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+
 }
 
 .header .container {
@@ -157,6 +164,12 @@ img {
 .hero {
   background-color: var(--prime-color);
   padding: 188px 0;
+  background-image: linear-gradient(to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)), url(/images/people-office\ 1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .hero-button {
@@ -174,6 +187,8 @@ img {
   margin-top: 48px;
   padding: 16px 32px;
   border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
 }
 
 .hero-button:hover {
@@ -187,6 +202,16 @@ img {
 /* advanteges */
 .advanteges {
   padding: 120px 0;
+}
+
+.advanteges-svg {
+  padding: 24px 100px;
+  background-color: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
 }
 
 .visually-hidden {
@@ -283,6 +308,24 @@ img {
   color: var(--second-color);
   /* padding-bottom: 32px; */
   text-align: center;
+  margin-bottom: 8px;
+}
+
+.our-team-svg {
+  width: 232px;
+  height: 40px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 24px;
+}
+
+.our-team-svg-link {
+  fill: #4d5ae5;
+}
+
+.our-team-svg-link:hover {
+  fill: #404bbf;
 }
 
 /* our-portfolio */
@@ -345,8 +388,9 @@ img {
 
 /* footer */
 .footer .container {
-  /* margin-left: 156px;
-  width: 264px; */
+  display: flex;
+  align-content: end;
+  gap: 120px;
 }
 
 .footer {
@@ -379,5 +423,27 @@ img {
 .footer-p {
   color: #f4f4fd;
   max-width: 264px;
+}
 
+.footer-social-h {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+
+}
+
+.footer-svg {
+  display: flex;
+  gap: 8px
+}
+
+.footer-svg-link {
+  fill: #4d5ae5;
+}
+
+.footer-svg-link:hover {
+  fill: #31d0aa;
 }
