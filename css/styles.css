@@ -117,7 +117,9 @@ svg {
 
 .header-nav:hover {
   color: #404bbf;
+  border-bottom: solid 4px;
 }
+
 
 .header-nav:active {
   color: #404bbf;
@@ -384,11 +386,13 @@ svg {
   overflow: hidden;
 }
 
-.our-portfolio-li:hover .overlay {
+.our-portfolio-li:hover .overlay,
+.our-team-li-border {
   transform: translateY(0);
   cursor: pointer;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
+
 
 .our-portfolio-foto-hov {
   position: relative;
