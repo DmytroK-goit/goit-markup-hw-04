@@ -11,7 +11,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--second-color);
   background-color: #ffffff;
-
 }
 
 ul {
@@ -62,8 +61,8 @@ svg {
 .header {
   border-bottom: 1px solid #e7e9fc;
   margin: 0 auto;
-  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
-
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .header .container {
@@ -109,6 +108,18 @@ svg {
   color: var(--prime-color);
   padding: 24px 0;
   display: block;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-nav::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
 }
 
 .header-nav:focus {
@@ -119,7 +130,6 @@ svg {
   color: #404bbf;
   border-bottom: solid 4px;
 }
-
 
 .header-nav:active {
   color: #404bbf;
@@ -134,7 +144,7 @@ svg {
 
 .header-address-li {
   color: var(--second-color);
-
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-address-li:hover {
@@ -166,12 +176,14 @@ svg {
 .hero {
   background-color: var(--prime-color);
   padding: 188px 0;
-  background-image: linear-gradient(to bottom,
+  background-image: linear-gradient(
+      to bottom,
       rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)), url(/images/people-office1.jpg);
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(/images/people-office1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .hero-button {
@@ -190,7 +202,6 @@ svg {
   padding: 16px 32px;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-
 }
 
 .hero-button:hover {
@@ -198,7 +209,7 @@ svg {
 }
 
 .hero-button:focus {
-  background-color: #404BBF;
+  background-color: #404bbf;
 }
 
 /* advanteges */
@@ -217,7 +228,6 @@ svg {
 }
 
 .visually-hidden {
-
   position: absolute;
   width: 1px;
   height: 1px;
@@ -230,7 +240,6 @@ svg {
   overflow: hidden;
 }
 
-
 .advanteges .container {
   margin-left: auto;
   margin-right: auto;
@@ -242,7 +251,7 @@ svg {
 
 .advanteges .container ul {
   display: flex;
-  gap: 24px
+  gap: 24px;
 }
 
 .advanteges-h {
@@ -256,7 +265,6 @@ svg {
 
 .advanteges-p {
   color: var(--second-color);
-
 }
 
 /* our-team */
@@ -292,9 +300,10 @@ svg {
 
 .our-team-li {
   width: calc((100% - 72px) / 4);
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .our-team h3 {
@@ -368,7 +377,6 @@ svg {
   padding-left: 16px; */
 }
 
-
 .our-team-li-border {
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
@@ -390,15 +398,14 @@ svg {
 .our-team-li-border {
   transform: translateY(0);
   cursor: pointer;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
-
 
 .our-portfolio-foto-hov {
   position: relative;
   overflow: hidden;
 }
-
 
 .overlay {
   font-weight: 400;
@@ -462,12 +469,11 @@ svg {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
-
 }
 
 .footer-svg {
   display: flex;
-  gap: 8px
+  gap: 8px;
 }
 
 .footer-svg-link {
