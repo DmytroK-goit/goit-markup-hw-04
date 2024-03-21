@@ -337,7 +337,7 @@ svg {
   margin-left: auto;
   margin-right: auto;
   gap: 24px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .our-team-svg-li {
@@ -353,12 +353,13 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-
-.our-team-svg-link {
   fill: #4d5ae5;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+.our-team-svg-link {}
 
 .our-team-svg-link:hover {
   fill: #404bbf;
@@ -422,6 +423,7 @@ svg {
   width: calc((100% - 48px) / 3);
   position: relative;
   overflow: hidden;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-portfolio-li:hover {
