@@ -112,6 +112,7 @@ svg {
   color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .header-nav::after {
   content: "";
   width: 100%;
@@ -177,11 +178,9 @@ svg {
 .hero {
   background-color: var(--prime-color);
   padding: 188px 0;
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+      rgba(46, 47, 66, 0.7)),
     url(/images/people-office1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -206,7 +205,7 @@ svg {
   padding: 16px 32px;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover {
@@ -230,6 +229,9 @@ svg {
   width: 264px;
   height: 112px;
   margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .visually-hidden {
@@ -338,12 +340,33 @@ svg {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.our-team-svg-li {
+  width: 40px;
+  height: 40px;
+}
+
+.our-team-svg-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .our-team-svg-link {
   fill: #4d5ae5;
 }
 
 .our-team-svg-link:hover {
   fill: #404bbf;
+  background-color: #404bbf;
+}
+
+.our-team-svg-link:focus {
+  background-color: #404bbf;
 }
 
 /* our-portfolio */
@@ -401,6 +424,14 @@ svg {
   overflow: hidden;
 }
 
+.our-portfolio-li:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+  ;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .our-portfolio-li:hover .overlay,
 .our-team-li-border {
   transform: translateY(0);
@@ -433,8 +464,9 @@ svg {
 /* footer */
 .footer .container {
   display: flex;
-  align-content: end;
+  align-items: baseline;
   gap: 120px;
+  margin-right: 120px;
 }
 
 .footer {
@@ -480,13 +512,41 @@ svg {
 
 .footer-svg {
   display: flex;
-  gap: 8px;
+  gap: 16px;
+}
+
+.footer-svg-li {
+
+  width: 40px;
+  height: 40px;
+}
+
+.footer-svg-a {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-svg-a:hover {
+  background-color: #31d0aa;
+
+}
+
+.footer-svg-a:focus {
+  background-color: #31d0aa;
 }
 
 .footer-svg-link {
   fill: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-svg-link:hover {
   fill: #31d0aa;
+
+
 }
